@@ -1,0 +1,7 @@
+.bg{
+  background-image: url("/src//assets/windowsbg.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: fit-content;
+}
