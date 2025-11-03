@@ -3,7 +3,7 @@ import { useNavigate } from "react-router";
 import EnvelopeAnimation from "./EnvelopeAnimation";
 import LoadingScreen from "./LoadingScreen";
 import { motion, AnimatePresence } from "framer-motion";
-
+import trip from "../assets/trip.gif"
 export default function Onboarding() {
   const [stage, setStage] = useState("envelope");
   const navigate = useNavigate();
@@ -33,6 +33,10 @@ export default function Onboarding() {
             transition={{ duration: 1 }}
           >
             <EnvelopeAnimation />
+            
+            {/* <img src={trip} alt="" /> */}
+            
+            {/* <img src="" alt="" /> */}
           </motion.div>
         )}
 

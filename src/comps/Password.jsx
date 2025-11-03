@@ -58,14 +58,14 @@ export default function Password() {
 
   return (
     <div>
-      <div className="flex flex-col mx-auto items-center justify-center h-[95vh]">
+      <div className="flex flex-col mx-auto items-center justify-center h-[95vh] bg-image">
         <motion.div
           initial={{ x: 100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.8, ease: "easeInOut" }}
           className="flex flex-col items-center"
         >
-          <div className="card w-[320px] lg:w-[480px] shadow-xl px-5 lg:px-12 py-10">
+          <div className="card w-[320px] lg:w-[480px] shadow-xl px-5 lg:px-12 py-10 bg-white">
             <img className="w-20 lg:w-30 pb-1" src={logo} alt="logo" />
 
             <div className="flex gap-3 items-center text-sm pt-2 pb-1">
