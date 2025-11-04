@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import logo from "../assets/Microsoft_Logo_1.png";
 import Footer from "./footer"
 import { useNavigate } from "react-router";
+import { GrKey } from "react-icons/gr";
 
 export default function SignIn() {
   const [email, setEmail] = useState("");
@@ -34,15 +35,15 @@ export default function SignIn() {
   };
 
   return (
-    <div>
-      <div className="flex flex-col mx-auto items-center justify-center h-[95vh] bg-image">
+    <div className="bg-image">
+      <div className="flex flex-col mx-auto items-center justify-center h-[95vh]">
       <motion.div
         initial={{ x: 100, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.8, ease: "easeInOut" }}
         className="flex flex-col items-center"
       >
-        <div className="card w-[320px] lg:w-[480px] bg-white shadow-xl px-5 lg:px-12 py-10">
+        <div className="card w-screen lg:w-[480px] bg-white px-5 lg:px-12 py-10">
           <img className="w-20 lg:w-30 pb-1" src={logo} alt="logo" />
           <h1 className="text-[25px] font-semibold">Sign in</h1>
 
@@ -72,6 +73,9 @@ export default function SignIn() {
               </button>
             </div>
           </form>
+        </div>
+        <div className="card w-xs md:w-2xl lg:w-[480px] bg-white px-5 lg:px-12 py-4 border mt-8">
+          <p className="flex items-center gap-2"><span><GrKey /></span>Sign-in Options</p>
         </div>
       </motion.div>
     </div>
